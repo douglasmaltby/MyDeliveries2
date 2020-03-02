@@ -96,6 +96,8 @@ class PackagesTypeDetailViewController: FUIFormTableViewController, SAPFioriLoad
         }
     }
 
+    /* 3/1/20 - Below func tableView( : UITableView was the code that somehow got messed up in original MyDeliveries. Copied pasted as is and it worked fine. Must have fat fingered in some errant code that created the compile error
+    */
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         return 5
     }
@@ -112,7 +114,8 @@ class PackagesTypeDetailViewController: FUIFormTableViewController, SAPFioriLoad
                 let destinationStoryBoard = UIStoryboard(name: "DeliveryStatusType", bundle: nil)
                 var masterViewController = destinationStoryBoard.instantiateViewController(withIdentifier: "DeliveryStatusTypeMaster")
                 func loadProperty(_ completionHandler: @escaping ([DeliveryStatusType]?, Error?) -> Void) {
-                    self.deliveryService.loadProperty(PackagesType.deliveryStatus, into: self.entity) { error in
+                    let sortQuery = DataQuery().orderBy(DeliveryStatusType.deliveryTimestamp, .descending)
+                    self.deliveryService.loadProperty(PackagesType.deliveryStatus, into: self.entity, query: sortQuery) { error in
                         self.hideFioriLoadingIndicator()
                         if let error = error {
                             completionHandler(nil, error)
