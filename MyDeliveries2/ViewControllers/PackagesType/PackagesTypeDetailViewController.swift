@@ -98,6 +98,12 @@ class PackagesTypeDetailViewController: FUIFormTableViewController, SAPFioriLoad
             chartNavigationCell.textLabel?.textColor = .preferredFioriColor(forStyle: .primary1)
             return chartNavigationCell
         
+        case 6:
+            let mapNavigationCell = tableView.dequeueReusableCell(withIdentifier: "NavToShowTrackingMap", for: indexPath)
+            mapNavigationCell.textLabel?.text = "Track Delivery"
+            mapNavigationCell.textLabel?.textColor = .preferredFioriColor(forStyle: .primary1)
+            return mapNavigationCell
+            
         default:
             return UITableViewCell()
         }
@@ -106,7 +112,8 @@ class PackagesTypeDetailViewController: FUIFormTableViewController, SAPFioriLoad
     /* 3/1/20 - Below func tableView( : UITableView was the code that somehow got messed up in original MyDeliveries. Copied pasted as is and it worked fine. Must have fat fingered in some errant code that created the compile error
     */
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        return 6 //change from 5 to 6 for added packae property to navigate to chart view scene
+        return 7
+        //change from 5 to 6 for added package property to navigate to chart view scene, then from 6 to 7 for the cell for nav to map view
     }
 
     override func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
