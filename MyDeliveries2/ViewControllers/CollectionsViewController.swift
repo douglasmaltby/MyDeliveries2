@@ -18,8 +18,10 @@ protocol EntitySetUpdaterDelegate {
 }
 
 class CollectionsViewController: FUIFormTableViewController {
-    private var collections = CollectionType.all
-
+    // Comment out original CollectionType.all and replace
+    // private var collections = CollectionType.all
+    private let collections = [CollectionType.packages]
+    
     // Variable to store the selected index path
     private var selectedIndex: IndexPath?
 
