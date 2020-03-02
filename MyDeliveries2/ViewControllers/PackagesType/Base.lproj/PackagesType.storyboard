@@ -85,6 +85,17 @@
                                     <segue destination="RzZ-st-7Ea" kind="show" identifier="showChart" id="gOy-jX-xYI"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NavToShowTrackingMap" id="ubg-u8-Gbx">
+                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ubg-u8-Gbx" id="kZN-z8-JBT">
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="iwn-cQ-WZg" kind="show" identifier="showTrackingMap" id="Myy-Lh-u9n"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="AbA-MP-qfJ" id="Iuh-bL-3sr"/>
@@ -121,6 +132,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tV-N9-zK3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1484" y="236"/>
+        </scene>
+        <!--TrackingMapViewController-->
+        <scene sceneID="h4Y-Kn-qkk">
+            <objects>
+                <viewController title="TrackingMapViewController" id="iwn-cQ-WZg" customClass="TrackingMapViewController" customModule="MyDeliveries2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MIq-Yq-1Jj"/>
+                        <viewControllerLayoutGuide type="bottom" id="XYr-D4-Mo4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c8J-CY-uha">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wzh-pE-MZJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-Hm-wup" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1490" y="932"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ch5-fM-FqB">
