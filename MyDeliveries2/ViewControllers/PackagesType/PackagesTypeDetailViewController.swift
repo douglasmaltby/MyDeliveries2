@@ -90,7 +90,14 @@ class PackagesTypeDetailViewController: FUIFormTableViewController, SAPFioriLoad
             cell.value = " "
             cell.accessoryType = .disclosureIndicator
             return cell
-
+        
+        // add case 5 for new table view cell. Tutorial 5 step 3
+        case 5:
+            let chartNavigationCell = tableView.dequeueReusableCell(withIdentifier: "NavToShowChart", for: indexPath)
+            chartNavigationCell.textLabel?.text = "Waiting Time"
+            chartNavigationCell.textLabel?.textColor = .preferredFioriColor(forStyle: .primary1)
+            return chartNavigationCell
+        
         default:
             return UITableViewCell()
         }
@@ -99,7 +106,7 @@ class PackagesTypeDetailViewController: FUIFormTableViewController, SAPFioriLoad
     /* 3/1/20 - Below func tableView( : UITableView was the code that somehow got messed up in original MyDeliveries. Copied pasted as is and it worked fine. Must have fat fingered in some errant code that created the compile error
     */
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        return 5
+        return 6 //change from 5 to 6 for added packae property to navigate to chart view scene
     }
 
     override func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
