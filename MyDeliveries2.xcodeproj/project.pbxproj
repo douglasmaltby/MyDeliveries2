@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */; };
+		1E61EB990F64E137945B0335 /* DeliveryStatusTypeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DACFC84C28EADDCB0F326 /* DeliveryStatusTypeDetailViewController.swift */; };
+		43214B0EBEF9D84F74B4E0E6 /* DeliveryServiceMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D13497D85306E591CFD6C /* DeliveryServiceMetadataParser.swift */; };
+		4A43BCCAA115705A1237DC80 /* PackagesTypeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273B1AF5701BAE2703376B76 /* PackagesTypeDetailViewController.swift */; };
+		4B4A5597C0EFBCFA72EDFA80 /* OnboardingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377ADF67C44D9C621D3D7B1B /* OnboardingErrorHandler.swift */; };
+		4F1CE8D8382CF3BAB557D866 /* DeliveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA4CB8521BA3D5FFCC7926 /* DeliveryService.swift */; };
+		5681C5509CF3F30E384F1410 /* DeliveryStatusTypeMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6469FA6DC567E55C91DB7 /* DeliveryStatusTypeMasterViewController.swift */; };
+		63D97274B655A81C22CAE1D3 /* ApplicationUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355931094FE745D2CC8CEBFB /* ApplicationUIManager.swift */; };
+		663412436A451D1CE8F19674 /* DeliveryServiceMetadataChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D206073D29DF2EE4437CDE1 /* DeliveryServiceMetadataChanges.swift */; };
+		690DE2301BAA4F7C736123E9 /* DeliveryStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458784A16F75A94D1D5A5DBD /* DeliveryStatusType.swift */; };
+		73D77020855182A91A00FD7C /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBC24F22A6C0363D12D756 /* AlertHelper.swift */; };
+		7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1315B81D4B982000A5DA56 /* AppDelegate.swift */; };
+		7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C11D4B982000A5DA56 /* Assets.xcassets */; };
+		7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */; };
+		7A16F06D1FD1B3C700D2FABD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A16F06C1FD1B3C700D2FABD /* README.md */; };
+		7A5744B621DE553600E58C7F /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5744B521DE553600E58C7F /* UITests.swift */; };
+		7ABA471D219D6EAD005B471C /* SAPOData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4717219D6EAD005B471C /* SAPOData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA471E219D6EAD005B471C /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA471F219D6EAD005B471C /* SAPCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4719219D6EAD005B471C /* SAPCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA4720219D6EAD005B471C /* SAPFioriFlows.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471A219D6EAD005B471C /* SAPFioriFlows.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA4721219D6EAD005B471C /* SAPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471B219D6EAD005B471C /* SAPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA4722219D6EAD005B471C /* SAPFiori.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471C219D6EAD005B471C /* SAPFiori.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA4724219D6EC7005B471C /* SAPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4719219D6EAD005B471C /* SAPCommon.framework */; };
+		7ABA4725219D6EC7005B471C /* SAPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471B219D6EAD005B471C /* SAPFoundation.framework */; };
+		7ABA4726219D6EC7005B471C /* SAPFioriFlows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471A219D6EAD005B471C /* SAPFioriFlows.framework */; };
+		7ABA4727219D6EC7005B471C /* SAPFiori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471C219D6EAD005B471C /* SAPFiori.framework */; };
+		7ABA4728219D6EC7005B471C /* SAPOData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4717219D6EAD005B471C /* SAPOData.framework */; };
+		8F5632060D9384D23393D764 /* CellCreationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44809FBD409EC346A45211D2 /* CellCreationHelper.swift */; };
+		9504AAA8BE40DCB9F79D4CC5 /* PackagesType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361E336CF3618B717BEB0268 /* PackagesType.storyboard */; };
+		98BA8517C113573066ED8E13 /* DeliveryServiceMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF214E4A4F33E19E994ECD4 /* DeliveryServiceMetadata.swift */; };
+		B5AB1AD2C905ADE4BF4C80C9 /* DeliveryStatusType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B3242AC84307B58B49AFD2 /* DeliveryStatusType.storyboard */; };
+		C55E776112DEB8F769DD21B8 /* ODataOnboardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126AFDFD3AF6EF78F411C7A /* ODataOnboardingStep.swift */; };
+		C77BE0A711D355E188A8E5F4 /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D3E344F456C5C2A2F8745 /* CollectionType.swift */; };
+		C9559DB4BA1CF8DBCB229F9F /* DeliveryServiceStaticResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BFEC16831A51B0CB8192E /* DeliveryServiceStaticResolver.swift */; };
+		CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCA7A9B1E3778A9001AF49E /* Main.storyboard */; };
+		D3448A0FC4B4D9EE8178EF44 /* DeliveryServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09469D0AEEECB674580278B6 /* DeliveryServiceFactory.swift */; };
+		D4141141B4AFCE4DCC94830C /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC73A0E9B30A7B0E5AA7C920 /* LocalizedStrings.swift */; };
+		D5EF85500E48F06BFC12095C /* DeliveryServiceMetadataText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C830657E2AE3DBC04CBEEE5 /* DeliveryServiceMetadataText.swift */; };
+		D67E14EC612C3B82E2041E50 /* OnlineODataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B65476FBD78E5BE85C5F97 /* OnlineODataController.swift */; };
+		DF5EE19C5CCFD7C28B952B66 /* OnboardingFlowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1DFF4F43AE5C60F58B3ED8 /* OnboardingFlowProvider.swift */; };
+		F0C1AC06ACAB6F0F64B930F6 /* SAPFioriLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63049C27A02BB0B538561425 /* SAPFioriLoadingIndicator.swift */; };
+		F3189BA6779E71088CC3C993 /* PackagesTypeMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98496CE36C167D9061516C8C /* PackagesTypeMasterViewController.swift */; };
+		FA9BA3114FE5F25A0A10F6DC /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A0F94F63F8CC270F20780E /* CollectionsViewController.swift */; };
+		FCA7ADFCBFCCF09CA61432B7 /* PackagesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EE63E3414C540DDF985E0E /* PackagesType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A5744B821DE553700E58C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A1315AD1D4B982000A5DA56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A1315B41D4B982000A5DA56;
+			remoteInfo = MyDeliveries2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		758AC1C31D5A265200311F39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7ABA471D219D6EAD005B471C /* SAPOData.framework in Embed Frameworks */,
+				7ABA471E219D6EAD005B471C /* BuildFile in Embed Frameworks */,
+				7ABA471F219D6EAD005B471C /* SAPCommon.framework in Embed Frameworks */,
+				7ABA4720219D6EAD005B471C /* SAPFioriFlows.framework in Embed Frameworks */,
+				7ABA4721219D6EAD005B471C /* SAPFoundation.framework in Embed Frameworks */,
+				7ABA4722219D6EAD005B471C /* SAPFiori.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09469D0AEEECB674580278B6 /* DeliveryServiceFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceFactory.swift; path = "Proxy Classes/internal/DeliveryServiceFactory.swift"; sourceTree = "<group>"; };
+		1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAPLogo@2x.png"; sourceTree = "<group>"; };
+		273B1AF5701BAE2703376B76 /* PackagesTypeDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PackagesTypeDetailViewController.swift; path = ViewControllers/PackagesType/PackagesTypeDetailViewController.swift; sourceTree = "<group>"; };
+		2FA6469FA6DC567E55C91DB7 /* DeliveryStatusTypeMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryStatusTypeMasterViewController.swift; path = ViewControllers/DeliveryStatusType/DeliveryStatusTypeMasterViewController.swift; sourceTree = "<group>"; };
+		302A340B2640E25236CDFE34 /* Base */ = {isa = PBXFileReference; includeInIndex = ""; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DeliveryStatusType.storyboard; sourceTree = "<group>"; };
+		355931094FE745D2CC8CEBFB /* ApplicationUIManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApplicationUIManager.swift; path = Onboarding/ApplicationUIManager.swift; sourceTree = "<group>"; };
+		377ADF67C44D9C621D3D7B1B /* OnboardingErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingErrorHandler.swift; path = Onboarding/OnboardingErrorHandler.swift; sourceTree = "<group>"; };
+		3D206073D29DF2EE4437CDE1 /* DeliveryServiceMetadataChanges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceMetadataChanges.swift; path = "Proxy Classes/internal/DeliveryServiceMetadataChanges.swift"; sourceTree = "<group>"; };
+		3ECBC24F22A6C0363D12D756 /* AlertHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertHelper.swift; path = Utils/AlertHelper.swift; sourceTree = "<group>"; };
+		44809FBD409EC346A45211D2 /* CellCreationHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellCreationHelper.swift; path = Utils/CellCreationHelper.swift; sourceTree = "<group>"; };
+		458784A16F75A94D1D5A5DBD /* DeliveryStatusType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryStatusType.swift; path = "Proxy Classes/public/DeliveryStatusType.swift"; sourceTree = "<group>"; };
+		4FF214E4A4F33E19E994ECD4 /* DeliveryServiceMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceMetadata.swift; path = "Proxy Classes/public/DeliveryServiceMetadata.swift"; sourceTree = "<group>"; };
+		5C830657E2AE3DBC04CBEEE5 /* DeliveryServiceMetadataText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceMetadataText.swift; path = "Proxy Classes/internal/DeliveryServiceMetadataText.swift"; sourceTree = "<group>"; };
+		63049C27A02BB0B538561425 /* SAPFioriLoadingIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAPFioriLoadingIndicator.swift; path = Utils/SAPFioriLoadingIndicator.swift; sourceTree = "<group>"; };
+		74EE63E3414C540DDF985E0E /* PackagesType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PackagesType.swift; path = "Proxy Classes/public/PackagesType.swift"; sourceTree = "<group>"; };
+		7A1315B51D4B982000A5DA56 /* MyDeliveries2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDeliveries2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1315B81D4B982000A5DA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A1315C11D4B982000A5DA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A1315C41D4B982000A5DA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A1315C61D4B982000A5DA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A16F06C1FD1B3C700D2FABD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7A5744B321DE553600E58C7F /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A5744B521DE553600E58C7F /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		7A5744B721DE553700E58C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABA4717219D6EAD005B471C /* SAPOData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPOData.framework; sourceTree = "<group>"; };
+		7ABA4719219D6EAD005B471C /* SAPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPCommon.framework; sourceTree = "<group>"; };
+		7ABA471A219D6EAD005B471C /* SAPFioriFlows.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFioriFlows.framework; sourceTree = "<group>"; };
+		7ABA471B219D6EAD005B471C /* SAPFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFoundation.framework; sourceTree = "<group>"; };
+		7ABA471C219D6EAD005B471C /* SAPFiori.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFiori.framework; sourceTree = "<group>"; };
+		871D3E344F456C5C2A2F8745 /* CollectionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionType.swift; path = Model/CollectionType.swift; sourceTree = "<group>"; };
+		876D13497D85306E591CFD6C /* DeliveryServiceMetadataParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceMetadataParser.swift; path = "Proxy Classes/internal/DeliveryServiceMetadataParser.swift"; sourceTree = "<group>"; };
+		96A0F94F63F8CC270F20780E /* CollectionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionsViewController.swift; path = ViewControllers/CollectionsViewController.swift; sourceTree = "<group>"; };
+		98496CE36C167D9061516C8C /* PackagesTypeMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PackagesTypeMasterViewController.swift; path = ViewControllers/PackagesType/PackagesTypeMasterViewController.swift; sourceTree = "<group>"; };
+		A3B65476FBD78E5BE85C5F97 /* OnlineODataController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnlineODataController.swift; path = OData/OnlineODataController.swift; sourceTree = "<group>"; };
+		A44DACFC84C28EADDCB0F326 /* DeliveryStatusTypeDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryStatusTypeDetailViewController.swift; path = ViewControllers/DeliveryStatusType/DeliveryStatusTypeDetailViewController.swift; sourceTree = "<group>"; };
+		C8FA4CB8521BA3D5FFCC7926 /* DeliveryService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryService.swift; path = "Proxy Classes/public/DeliveryService.swift"; sourceTree = "<group>"; };
+		C95BFEC16831A51B0CB8192E /* DeliveryServiceStaticResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceStaticResolver.swift; path = "Proxy Classes/internal/DeliveryServiceStaticResolver.swift"; sourceTree = "<group>"; };
+		CB909D801E38CA8800218154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC73A0E9B30A7B0E5AA7C920 /* LocalizedStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		DC1DFF4F43AE5C60F58B3ED8 /* OnboardingFlowProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingFlowProvider.swift; path = Onboarding/OnboardingFlowProvider.swift; sourceTree = "<group>"; };
+		E126AFDFD3AF6EF78F411C7A /* ODataOnboardingStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODataOnboardingStep.swift; path = OData/ODataOnboardingStep.swift; sourceTree = "<group>"; };
+		F07E063F2E423E68A160A50D /* Base */ = {isa = PBXFileReference; includeInIndex = ""; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PackagesType.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A1315B21D4B982000A5DA56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ABA4724219D6EC7005B471C /* SAPCommon.framework in Frameworks */,
+				7ABA4725219D6EC7005B471C /* SAPFoundation.framework in Frameworks */,
+				7ABA4726219D6EC7005B471C /* SAPFioriFlows.framework in Frameworks */,
+				7ABA4727219D6EC7005B471C /* SAPFiori.framework in Frameworks */,
+				7ABA4728219D6EC7005B471C /* SAPOData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5744B021DE553600E58C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0854175526E2A37C41818EEC /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				C95BFEC16831A51B0CB8192E /* DeliveryServiceStaticResolver.swift */,
+				5C830657E2AE3DBC04CBEEE5 /* DeliveryServiceMetadataText.swift */,
+				09469D0AEEECB674580278B6 /* DeliveryServiceFactory.swift */,
+				876D13497D85306E591CFD6C /* DeliveryServiceMetadataParser.swift */,
+				3D206073D29DF2EE4437CDE1 /* DeliveryServiceMetadataChanges.swift */,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		34B397530A6925836F7FADC8 /* OData */ = {
+			isa = PBXGroup;
+			children = (
+				A3B65476FBD78E5BE85C5F97 /* OnlineODataController.swift */,
+				E126AFDFD3AF6EF78F411C7A /* ODataOnboardingStep.swift */,
+			);
+			name = OData;
+			sourceTree = "<group>";
+		};
+		5E73FD12DF6F716544F6F4E0 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				74EE63E3414C540DDF985E0E /* PackagesType.swift */,
+				4FF214E4A4F33E19E994ECD4 /* DeliveryServiceMetadata.swift */,
+				458784A16F75A94D1D5A5DBD /* DeliveryStatusType.swift */,
+				C8FA4CB8521BA3D5FFCC7926 /* DeliveryService.swift */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		6A22A36F665DBD528E39B6CB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				377ADF67C44D9C621D3D7B1B /* OnboardingErrorHandler.swift */,
+				355931094FE745D2CC8CEBFB /* ApplicationUIManager.swift */,
+				DC1DFF4F43AE5C60F58B3ED8 /* OnboardingFlowProvider.swift */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		6AF383D3B52A7C17D931CA53 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3ECBC24F22A6C0363D12D756 /* AlertHelper.swift */,
+				63049C27A02BB0B538561425 /* SAPFioriLoadingIndicator.swift */,
+				44809FBD409EC346A45211D2 /* CellCreationHelper.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		7A1315AC1D4B982000A5DA56 = {
+			isa = PBXGroup;
+			children = (
+				7A16F06C1FD1B3C700D2FABD /* README.md */,
+				7A1315B71D4B982000A5DA56 /* MyDeliveries2 */,
+				7A5744B421DE553600E58C7F /* UITests */,
+				7A1315B61D4B982000A5DA56 /* Products */,
+				7A1315CC1D4B990B00A5DA56 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A1315B61D4B982000A5DA56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A1315B51D4B982000A5DA56 /* MyDeliveries2.app */,
+				7A5744B321DE553600E58C7F /* UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A1315B71D4B982000A5DA56 /* MyDeliveries2 */ = {
+			isa = PBXGroup;
+			children = (
+				7A1315B81D4B982000A5DA56 /* AppDelegate.swift */,
+				CBCA7A9B1E3778A9001AF49E /* Main.storyboard */,
+				7A1315C11D4B982000A5DA56 /* Assets.xcassets */,
+				7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */,
+				1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */,
+				7A1315C61D4B982000A5DA56 /* Info.plist */,
+				924310E46CE61A89ECD13A90 /* ViewControllers */,
+				E4C86792CBC97C431C5F1B30 /* Proxy Classes */,
+				6AF383D3B52A7C17D931CA53 /* Utils */,
+				34B397530A6925836F7FADC8 /* OData */,
+				826E0AF7F934B1CE33A818A3 /* Model */,
+				6A22A36F665DBD528E39B6CB /* Onboarding */,
+				CC73A0E9B30A7B0E5AA7C920 /* LocalizedStrings.swift */,
+			);
+			path = MyDeliveries2;
+			sourceTree = "<group>";
+		};
+		7A1315CC1D4B990B00A5DA56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ABA4719219D6EAD005B471C /* SAPCommon.framework */,
+				7ABA471C219D6EAD005B471C /* SAPFiori.framework */,
+				7ABA471A219D6EAD005B471C /* SAPFioriFlows.framework */,
+				7ABA471B219D6EAD005B471C /* SAPFoundation.framework */,
+				7ABA4717219D6EAD005B471C /* SAPOData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A5744B421DE553600E58C7F /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A5744B521DE553600E58C7F /* UITests.swift */,
+				7A5744B721DE553700E58C7F /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		826E0AF7F934B1CE33A818A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				871D3E344F456C5C2A2F8745 /* CollectionType.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		924310E46CE61A89ECD13A90 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				96A0F94F63F8CC270F20780E /* CollectionsViewController.swift */,
+				B024016C1B0084E5381B6348 /* DeliveryStatusType */,
+				B632A29DB565719DFC030201 /* PackagesType */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B024016C1B0084E5381B6348 /* DeliveryStatusType */ = {
+			isa = PBXGroup;
+			children = (
+				2FA6469FA6DC567E55C91DB7 /* DeliveryStatusTypeMasterViewController.swift */,
+				A44DACFC84C28EADDCB0F326 /* DeliveryStatusTypeDetailViewController.swift */,
+				C5B3242AC84307B58B49AFD2 /* DeliveryStatusType.storyboard */,
+			);
+			name = DeliveryStatusType;
+			sourceTree = "<group>";
+		};
+		B632A29DB565719DFC030201 /* PackagesType */ = {
+			isa = PBXGroup;
+			children = (
+				273B1AF5701BAE2703376B76 /* PackagesTypeDetailViewController.swift */,
+				98496CE36C167D9061516C8C /* PackagesTypeMasterViewController.swift */,
+				361E336CF3618B717BEB0268 /* PackagesType.storyboard */,
+			);
+			name = PackagesType;
+			sourceTree = "<group>";
+		};
+		E4C86792CBC97C431C5F1B30 /* Proxy Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0854175526E2A37C41818EEC /* internal */,
+				5E73FD12DF6F716544F6F4E0 /* public */,
+			);
+			name = "Proxy Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A1315B41D4B982000A5DA56 /* MyDeliveries2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "MyDeliveries2" */;
+			buildPhases = (
+				237616AD21AECC9A00B6F8AD /* Refresh SAP Cloud Platform SDK for iOS Frameworks */,
+				7A1315B11D4B982000A5DA56 /* Sources */,
+				7A1315B21D4B982000A5DA56 /* Frameworks */,
+				7A1315B31D4B982000A5DA56 /* Resources */,
+				758AC1C31D5A265200311F39 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDeliveries2;
+			productName = MyDeliveries2;
+			productReference = 7A1315B51D4B982000A5DA56 /* MyDeliveries2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A5744B221DE553600E58C7F /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A5744BC21DE553700E58C7F /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				7A5744AF21DE553600E58C7F /* Sources */,
+				7A5744B021DE553600E58C7F /* Frameworks */,
+				7A5744B121DE553600E58C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A5744B921DE553700E58C7F /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = 7A5744B321DE553600E58C7F /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A1315AD1D4B982000A5DA56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = SAP;
+				TargetAttributes = {
+					7A1315B41D4B982000A5DA56 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+					7A5744B221DE553600E58C7F = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7A1315B41D4B982000A5DA56;
+					};
+				};
+			};
+			buildConfigurationList = 7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "MyDeliveries2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 7A1315AC1D4B982000A5DA56;
+			productRefGroup = 7A1315B61D4B982000A5DA56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A1315B41D4B982000A5DA56 /* MyDeliveries2 */,
+				7A5744B221DE553600E58C7F /* UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A1315B31D4B982000A5DA56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A16F06D1FD1B3C700D2FABD /* README.md in Resources */,
+				7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */,
+				7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */,
+				CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */,
+				1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */,
+				9504AAA8BE40DCB9F79D4CC5 /* PackagesType.storyboard in Resources */,
+				B5AB1AD2C905ADE4BF4C80C9 /* DeliveryStatusType.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5744B121DE553600E58C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		237616AD21AECC9A00B6F8AD /* Refresh SAP Cloud Platform SDK for iOS Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Refresh SAP Cloud Platform SDK for iOS Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "sh ./scripts/refreshframeworks.sh\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A1315B11D4B982000A5DA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */,
+				FA9BA3114FE5F25A0A10F6DC /* CollectionsViewController.swift in Sources */,
+				C9559DB4BA1CF8DBCB229F9F /* DeliveryServiceStaticResolver.swift in Sources */,
+				FCA7ADFCBFCCF09CA61432B7 /* PackagesType.swift in Sources */,
+				D5EF85500E48F06BFC12095C /* DeliveryServiceMetadataText.swift in Sources */,
+				D3448A0FC4B4D9EE8178EF44 /* DeliveryServiceFactory.swift in Sources */,
+				73D77020855182A91A00FD7C /* AlertHelper.swift in Sources */,
+				D67E14EC612C3B82E2041E50 /* OnlineODataController.swift in Sources */,
+				43214B0EBEF9D84F74B4E0E6 /* DeliveryServiceMetadataParser.swift in Sources */,
+				C77BE0A711D355E188A8E5F4 /* CollectionType.swift in Sources */,
+				98BA8517C113573066ED8E13 /* DeliveryServiceMetadata.swift in Sources */,
+				690DE2301BAA4F7C736123E9 /* DeliveryStatusType.swift in Sources */,
+				5681C5509CF3F30E384F1410 /* DeliveryStatusTypeMasterViewController.swift in Sources */,
+				F0C1AC06ACAB6F0F64B930F6 /* SAPFioriLoadingIndicator.swift in Sources */,
+				C55E776112DEB8F769DD21B8 /* ODataOnboardingStep.swift in Sources */,
+				4F1CE8D8382CF3BAB557D866 /* DeliveryService.swift in Sources */,
+				1E61EB990F64E137945B0335 /* DeliveryStatusTypeDetailViewController.swift in Sources */,
+				4A43BCCAA115705A1237DC80 /* PackagesTypeDetailViewController.swift in Sources */,
+				8F5632060D9384D23393D764 /* CellCreationHelper.swift in Sources */,
+				F3189BA6779E71088CC3C993 /* PackagesTypeMasterViewController.swift in Sources */,
+				663412436A451D1CE8F19674 /* DeliveryServiceMetadataChanges.swift in Sources */,
+				4B4A5597C0EFBCFA72EDFA80 /* OnboardingErrorHandler.swift in Sources */,
+				63D97274B655A81C22CAE1D3 /* ApplicationUIManager.swift in Sources */,
+				D4141141B4AFCE4DCC94830C /* LocalizedStrings.swift in Sources */,
+				DF5EE19C5CCFD7C28B952B66 /* OnboardingFlowProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5744AF21DE553600E58C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A5744B621DE553600E58C7F /* UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A5744B921DE553700E58C7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A1315B41D4B982000A5DA56 /* MyDeliveries2 */;
+			targetProxy = 7A5744B821DE553700E58C7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		361E336CF3618B717BEB0268 /* PackagesType.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F07E063F2E423E68A160A50D /* Base */,
+			);
+			name = PackagesType.storyboard;
+			path = ViewControllers/PackagesType;
+			sourceTree = "<group>";
+		};
+		7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1315C41D4B982000A5DA56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C5B3242AC84307B58B49AFD2 /* DeliveryStatusType.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				302A340B2640E25236CDFE34 /* Base */,
+			);
+			name = DeliveryStatusType.storyboard;
+			path = ViewControllers/DeliveryStatusType;
+			sourceTree = "<group>";
+		};
+		CBCA7A9B1E3778A9001AF49E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB909D801E38CA8800218154 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A1315C71D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A1315C81D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A1315CA1D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MyDeliveries2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmaltby.MyDeliveries2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7A1315CB1D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MyDeliveries2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmaltby.MyDeliveries2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7A5744BA21DE553700E58C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyDeliveries2;
+			};
+			name = Debug;
+		};
+		7A5744BB21DE553700E58C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyDeliveries2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "MyDeliveries2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315C71D4B982000A5DA56 /* Debug */,
+				7A1315C81D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "MyDeliveries2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315CA1D4B982000A5DA56 /* Debug */,
+				7A1315CB1D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A5744BC21DE553700E58C7F /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A5744BA21DE553700E58C7F /* Debug */,
+				7A5744BB21DE553700E58C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A1315AD1D4B982000A5DA56 /* Project object */;
+}
