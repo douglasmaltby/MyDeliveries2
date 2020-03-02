@@ -28,7 +28,12 @@ class DeliveryStatusTypeMasterViewController: FUIFormTableViewController, SAPFio
         self.tableView.addSubview(self.refreshControl!)
         // Cell height settings
         self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 98
+        //self.tableView.estimatedRowHeight = 98
+        self.tableView.register(FUITimelineCell.self, forCellReuseIdentifier:"FUITimelineCell")
+        self.tableView.register(FUITimelineMarkerCell.self, forCellReuseIdentifier: "FUITimelineMarkerCell")
+        self.tableView.estimatedRowHeight = 44
+        self.tableView.backgroundColor = UIColor.preferredFioriColor(forStyle: .backgroundBase)
+        self.tableView.separatorStyle = .none
         self.updateTable()
     }
 
@@ -55,13 +60,79 @@ class DeliveryStatusTypeMasterViewController: FUIFormTableViewController, SAPFio
         return true
     }
 
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let deliveryStatusType = self.entities[indexPath.row]
 
         let cell = CellCreationHelper.objectCellWithNonEditableContent(tableView: tableView, indexPath: indexPath, key: "DeliveryStatusID", value: "\(deliveryStatusType.deliveryStatusID!)")
         return cell
     }
+     */
+    
+    // Tutorial 4, Step 4:
+    // https://developers.sap.com/tutorials/fiori-ios-scpms-teched18-04.html#f4c09373-0c11-4c84-b36b-5fdcf32c4f3a
+    // 1. comment out original tableView: cellForRowAt code above
+    // 2. Replace with new tableView: cellForRowAt code below
+    // 3. Add further functions below
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let deliveryStatusType = self.entities[indexPath.row]
+        if deliveryStatusType.selectable != 0 {
+            return timelineCell(representing: deliveryStatusType, forRowAt: indexPath)
+        } else {
+            return timelineMarkerCell(representing: deliveryStatusType, forRowAt: indexPath)
+        }
+    }
+    
+    private lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd HH:mm"
+        return formatter
+    }()
 
+    private func timelineMarkerCell(representing deliveryStatusType: DeliveryStatusType, forRowAt indexPath: IndexPath) -> FUITimelineMarkerCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FUITimelineMarkerCell", for: indexPath) as! FUITimelineMarkerCell
+
+        cell.nodeType = timelineMarkerNodeType(for: deliveryStatusType)
+        cell.showLeadingTimeline = indexPath.row != 0
+        cell.showTrailingTimeline = indexPath.row != (self.entities.count - 1)
+        cell.timestampText = dateFormatter.string(from: deliveryStatusType.deliveryTimestamp!.utc())
+        cell.titleText = deliveryStatusType.status
+
+        return cell
+    }
+
+    private func timelineCell(representing deliveryStatusType: DeliveryStatusType, forRowAt indexPath: IndexPath) -> FUITimelineCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FUITimelineCell", for: indexPath) as! FUITimelineCell
+
+        cell.nodeType = timelineNodeType(for: deliveryStatusType)
+        cell.timestampText = dateFormatter.string(from: deliveryStatusType.deliveryTimestamp!.utc())
+        cell.headlineText = deliveryStatusType.status
+        cell.subheadlineText = deliveryStatusType.location
+
+        return cell
+    }
+
+    private func timelineMarkerNodeType(for deliveryStatusType: DeliveryStatusType) -> FUITimelineMarkerCell.NodeType {
+        switch deliveryStatusType.statusType! {
+        case "start"    : return FUITimelineMarkerCell.NodeType.start
+        case "beforeEnd" : return FUITimelineMarkerCell.NodeType.beforeEnd
+        case "beforeStart" : return FUITimelineMarkerCell.NodeType.beforeStart
+        case "default" : return FUITimelineMarkerCell.NodeType.default
+        case "end"      : return FUITimelineMarkerCell.NodeType.end
+        default         : return FUITimelineMarkerCell.NodeType.start
+        }
+    }
+
+    private func timelineNodeType(for deliveryStatusType: DeliveryStatusType) -> FUITimelineCell.NodeType {
+        switch deliveryStatusType.statusType! {
+        case "complete": return FUITimelineCell.NodeType.complete
+        case "open" : return FUITimelineCell.NodeType.open
+        default: return FUITimelineCell.NodeType.open
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle != .delete {
             return
