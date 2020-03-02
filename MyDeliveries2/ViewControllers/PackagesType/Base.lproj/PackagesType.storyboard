@@ -144,9 +144,23 @@
                     <view key="view" contentMode="scaleToFill" id="c8J-CY-uha">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hZp-dK-L2w">
+                                <rect key="frame" x="20" y="8" width="335" height="631"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hZp-dK-L2w" firstAttribute="leading" secondItem="c8J-CY-uha" secondAttribute="leading" constant="20" symbolic="YES" id="m34-Qw-Kk6"/>
+                            <constraint firstAttribute="trailing" secondItem="hZp-dK-L2w" secondAttribute="trailing" constant="20" symbolic="YES" id="mS8-ZD-NLg"/>
+                            <constraint firstItem="XYr-D4-Mo4" firstAttribute="top" secondItem="hZp-dK-L2w" secondAttribute="bottom" constant="8" symbolic="YES" id="sf5-L3-vgk"/>
+                            <constraint firstItem="hZp-dK-L2w" firstAttribute="top" secondItem="MIq-Yq-1Jj" secondAttribute="bottom" constant="8" symbolic="YES" id="w60-1k-cTg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wzh-pE-MZJ"/>
+                    <connections>
+                        <outlet property="mapView" destination="hZp-dK-L2w" id="zWm-sT-HAO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-Hm-wup" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
