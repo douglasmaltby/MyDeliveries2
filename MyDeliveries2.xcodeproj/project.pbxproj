@@ -24,7 +24,7 @@
 		7A16F06D1FD1B3C700D2FABD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A16F06C1FD1B3C700D2FABD /* README.md */; };
 		7A5744B621DE553600E58C7F /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5744B521DE553600E58C7F /* UITests.swift */; };
 		7ABA471D219D6EAD005B471C /* SAPOData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4717219D6EAD005B471C /* SAPOData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7ABA471E219D6EAD005B471C /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA471E219D6EAD005B471C /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7ABA471F219D6EAD005B471C /* SAPCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4719219D6EAD005B471C /* SAPCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7ABA4720219D6EAD005B471C /* SAPFioriFlows.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471A219D6EAD005B471C /* SAPFioriFlows.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7ABA4721219D6EAD005B471C /* SAPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471B219D6EAD005B471C /* SAPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -71,7 +71,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7ABA471D219D6EAD005B471C /* SAPOData.framework in Embed Frameworks */,
-				7ABA471E219D6EAD005B471C /* BuildFile in Embed Frameworks */,
+				7ABA471E219D6EAD005B471C /* (null) in Embed Frameworks */,
 				7ABA471F219D6EAD005B471C /* SAPCommon.framework in Embed Frameworks */,
 				7ABA4720219D6EAD005B471C /* SAPFioriFlows.framework in Embed Frameworks */,
 				7ABA4721219D6EAD005B471C /* SAPFoundation.framework in Embed Frameworks */,
@@ -87,7 +87,7 @@
 		1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAPLogo@2x.png"; sourceTree = "<group>"; };
 		273B1AF5701BAE2703376B76 /* PackagesTypeDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PackagesTypeDetailViewController.swift; path = ViewControllers/PackagesType/PackagesTypeDetailViewController.swift; sourceTree = "<group>"; };
 		2FA6469FA6DC567E55C91DB7 /* DeliveryStatusTypeMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryStatusTypeMasterViewController.swift; path = ViewControllers/DeliveryStatusType/DeliveryStatusTypeMasterViewController.swift; sourceTree = "<group>"; };
-		302A340B2640E25236CDFE34 /* Base */ = {isa = PBXFileReference; includeInIndex = ""; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DeliveryStatusType.storyboard; sourceTree = "<group>"; };
+		302A340B2640E25236CDFE34 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DeliveryStatusType.storyboard; sourceTree = "<group>"; };
 		355931094FE745D2CC8CEBFB /* ApplicationUIManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApplicationUIManager.swift; path = Onboarding/ApplicationUIManager.swift; sourceTree = "<group>"; };
 		377ADF67C44D9C621D3D7B1B /* OnboardingErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingErrorHandler.swift; path = Onboarding/OnboardingErrorHandler.swift; sourceTree = "<group>"; };
 		3D206073D29DF2EE4437CDE1 /* DeliveryServiceMetadataChanges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceMetadataChanges.swift; path = "Proxy Classes/internal/DeliveryServiceMetadataChanges.swift"; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		CC73A0E9B30A7B0E5AA7C920 /* LocalizedStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		DC1DFF4F43AE5C60F58B3ED8 /* OnboardingFlowProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingFlowProvider.swift; path = Onboarding/OnboardingFlowProvider.swift; sourceTree = "<group>"; };
 		E126AFDFD3AF6EF78F411C7A /* ODataOnboardingStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODataOnboardingStep.swift; path = OData/ODataOnboardingStep.swift; sourceTree = "<group>"; };
-		F07E063F2E423E68A160A50D /* Base */ = {isa = PBXFileReference; includeInIndex = ""; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PackagesType.storyboard; sourceTree = "<group>"; };
+		F07E063F2E423E68A160A50D /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PackagesType.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +362,7 @@
 				TargetAttributes = {
 					7A1315B41D4B982000A5DA56 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 76485LK399;
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
@@ -646,7 +647,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 76485LK399;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -668,7 +669,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 76485LK399;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
