@@ -8,9 +8,7 @@ Create Your First iOS Application with the SAP Cloud Platform SDK for iOS
 Essentially - An OData service backend on SCP Neo with a Fiori in iOS app front-end using XCode.
 It includes controllers for table, charts, Fiori timeline cell elements, a map with annotations. 
 
-MyDeliveries2 Images:
-
-<img src="images/MyDeliveries2-1.png" width="100">
+MyDeliveries2 Images: <img src="images/MyDeliveries2-1.png" width="100">
 <img src="images/MyDeliveries2-2.png" width="100">
 <img src="images/MyDeliveries2-3.png" width="100">
 <img src="images/MyDeliveries2-4.png" width="100">
