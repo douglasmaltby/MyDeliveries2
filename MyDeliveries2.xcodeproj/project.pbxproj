@@ -11,6 +11,13 @@
 		1E61EB990F64E137945B0335 /* DeliveryStatusTypeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DACFC84C28EADDCB0F326 /* DeliveryStatusTypeDetailViewController.swift */; };
 		325C314B240CB64C00F3DEED /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325C314A240CB64C00F3DEED /* ChartViewController.swift */; };
 		325C314D240CC73B00F3DEED /* TrackingMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325C314C240CC73B00F3DEED /* TrackingMapViewController.swift */; };
+		325C31652414054900F3DEED /* MyDeliveries2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 325C315E2414054800F3DEED /* MyDeliveries2-1.png */; };
+		325C31662414054900F3DEED /* MyDeliveries2-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 325C315F2414054800F3DEED /* MyDeliveries2-4.png */; };
+		325C31672414054900F3DEED /* MyDeliveries2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 325C31602414054800F3DEED /* MyDeliveries2-2.png */; };
+		325C31682414054900F3DEED /* MyDeliveries2-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 325C31612414054800F3DEED /* MyDeliveries2-5.png */; };
+		325C31692414054900F3DEED /* MyDeliveries2-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 325C31622414054900F3DEED /* MyDeliveries2-7.png */; };
+		325C316A2414054900F3DEED /* MyDeliveries2-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 325C31632414054900F3DEED /* MyDeliveries2-6.png */; };
+		325C316B2414054900F3DEED /* MyDeliveries2-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 325C31642414054900F3DEED /* MyDeliveries2-3.png */; };
 		43214B0EBEF9D84F74B4E0E6 /* DeliveryServiceMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D13497D85306E591CFD6C /* DeliveryServiceMetadataParser.swift */; };
 		4A43BCCAA115705A1237DC80 /* PackagesTypeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273B1AF5701BAE2703376B76 /* PackagesTypeDetailViewController.swift */; };
 		4B4A5597C0EFBCFA72EDFA80 /* OnboardingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377ADF67C44D9C621D3D7B1B /* OnboardingErrorHandler.swift */; };
@@ -92,6 +99,13 @@
 		302A340B2640E25236CDFE34 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DeliveryStatusType.storyboard; sourceTree = "<group>"; };
 		325C314A240CB64C00F3DEED /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		325C314C240CC73B00F3DEED /* TrackingMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingMapViewController.swift; sourceTree = "<group>"; };
+		325C315E2414054800F3DEED /* MyDeliveries2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyDeliveries2-1.png"; sourceTree = "<group>"; };
+		325C315F2414054800F3DEED /* MyDeliveries2-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyDeliveries2-4.png"; sourceTree = "<group>"; };
+		325C31602414054800F3DEED /* MyDeliveries2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyDeliveries2-2.png"; sourceTree = "<group>"; };
+		325C31612414054800F3DEED /* MyDeliveries2-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyDeliveries2-5.png"; sourceTree = "<group>"; };
+		325C31622414054900F3DEED /* MyDeliveries2-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyDeliveries2-7.png"; sourceTree = "<group>"; };
+		325C31632414054900F3DEED /* MyDeliveries2-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyDeliveries2-6.png"; sourceTree = "<group>"; };
+		325C31642414054900F3DEED /* MyDeliveries2-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyDeliveries2-3.png"; sourceTree = "<group>"; };
 		355931094FE745D2CC8CEBFB /* ApplicationUIManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApplicationUIManager.swift; path = Onboarding/ApplicationUIManager.swift; sourceTree = "<group>"; };
 		377ADF67C44D9C621D3D7B1B /* OnboardingErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingErrorHandler.swift; path = Onboarding/OnboardingErrorHandler.swift; sourceTree = "<group>"; };
 		3D206073D29DF2EE4437CDE1 /* DeliveryServiceMetadataChanges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceMetadataChanges.swift; path = "Proxy Classes/internal/DeliveryServiceMetadataChanges.swift"; sourceTree = "<group>"; };
@@ -166,6 +180,20 @@
 			name = internal;
 			sourceTree = "<group>";
 		};
+		325C315D2414048000F3DEED /* images */ = {
+			isa = PBXGroup;
+			children = (
+				325C315E2414054800F3DEED /* MyDeliveries2-1.png */,
+				325C31602414054800F3DEED /* MyDeliveries2-2.png */,
+				325C31642414054900F3DEED /* MyDeliveries2-3.png */,
+				325C315F2414054800F3DEED /* MyDeliveries2-4.png */,
+				325C31612414054800F3DEED /* MyDeliveries2-5.png */,
+				325C31632414054900F3DEED /* MyDeliveries2-6.png */,
+				325C31622414054900F3DEED /* MyDeliveries2-7.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		34B397530A6925836F7FADC8 /* OData */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +242,7 @@
 				7A5744B421DE553600E58C7F /* UITests */,
 				7A1315B61D4B982000A5DA56 /* Products */,
 				7A1315CC1D4B990B00A5DA56 /* Frameworks */,
+				325C315D2414048000F3DEED /* images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -363,7 +392,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = SAP;
 				TargetAttributes = {
 					7A1315B41D4B982000A5DA56 = {
@@ -381,10 +410,9 @@
 			};
 			buildConfigurationList = 7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "MyDeliveries2" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -404,13 +432,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325C316B2414054900F3DEED /* MyDeliveries2-3.png in Resources */,
+				325C31652414054900F3DEED /* MyDeliveries2-1.png in Resources */,
 				7A16F06D1FD1B3C700D2FABD /* README.md in Resources */,
 				7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */,
+				325C31662414054900F3DEED /* MyDeliveries2-4.png in Resources */,
 				7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */,
 				CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */,
+				325C31692414054900F3DEED /* MyDeliveries2-7.png in Resources */,
+				325C316A2414054900F3DEED /* MyDeliveries2-6.png in Resources */,
+				325C31682414054900F3DEED /* MyDeliveries2-5.png in Resources */,
 				1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */,
 				9504AAA8BE40DCB9F79D4CC5 /* PackagesType.storyboard in Resources */,
 				B5AB1AD2C905ADE4BF4C80C9 /* DeliveryStatusType.storyboard in Resources */,
+				325C31672414054900F3DEED /* MyDeliveries2-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -600,6 +636,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
